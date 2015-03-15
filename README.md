@@ -12,7 +12,7 @@ Leaflet.help integrates into your Leaflet map easily, has sensible defaults to w
 
 Leaflet.help can be added to your map with one simple config option passed to the L.Map constructor:
 
-```
+```javascript
 var map = L.map('map', {
 	helpControl: true
 });
