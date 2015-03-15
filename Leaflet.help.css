@@ -1,6 +1,7 @@
 .leaflet-control-help .leaflet-control-help-button {
   font-weight: 700;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+}
 
 .help-panel {
   z-index: 10;
@@ -22,28 +23,36 @@
   box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
   opacity: 1;
   transition: all 0.1s;
-  transition-timing-function: ease-out; }
-  .help-panel.pending {
-    top: calc(50% + 5px);
-    opacity: 0; }
-  .help-panel.dismissed {
-    opacity: 0;
-    transition: opacity 0.15s; }
-  .help-panel p.title {
-    font-size: 1.4em;
-    font-weight: 700;
-    margin: 0; }
-  .help-panel h1 {
-    font-size: 1.2em; }
-  .help-panel h2 {
-    font-size: 1.1em; }
-  .help-panel h3 {
-    font-size: 1.0em; }
-  .help-panel a.close {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    padding: 0.25em 0.5em 0 0;
-    text-decoration: none;
-    color: #ccc;
-    font-size: 1.5em; }
+  transition-timing-function: ease-out;
+}
+.help-panel.pending {
+  top: calc(50% + 5px);
+  opacity: 0;
+}
+.help-panel.dismissed {
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.help-panel p.title {
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 0;
+}
+.help-panel h1 {
+  font-size: 1.2em;
+}
+.help-panel h2 {
+  font-size: 1.1em;
+}
+.help-panel h3 {
+  font-size: 1.0em;
+}
+.help-panel a.close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 0.25em 0.5em 0 0;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 1.5em;
+}
