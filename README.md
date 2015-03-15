@@ -1,6 +1,6 @@
 # Leaflet.help
 
-A Leaflet control that helps map users by displaying info on Leaflet's panning/zooming UI as well as other optional messages from the map author. 
+A Leaflet control that helps users by displaying info on Leaflet's panning/zooming UI as well as other optional messages from the map creator. 
 
 See the demo.
 
