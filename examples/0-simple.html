@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Leaflet.help — simple example</title>
+
+	<!-- jQuery -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+
+	<!-- Leaflet -->
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+	<!-- Leaflet.help -->
+	<link rel="stylesheet" href="../Leaflet.help.css">
+	<script src="../Leaflet.help.js"></script>
+
+	<!-- other Leaflet plugins -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.0.7/leaflet-providers.js"></script>
+
+
+	<style>
+		body, html {
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		#map-container {
+			position: relative;
+			height: 100%;
+			width: 100%;
+		}
+		#map {
+			height: 100%;
+			width: 100%;
+			background: #eee;
+		}
+		#note {
+			position: absolute;
+			top: 72px;
+			left: 50px;
+			width: 180px;
+			padding: 8px;
+			background: hsla(0, 80%, 40%, 1);
+			color: white;
+			font-family: sans-serif;
+			font-weight: 400;
+			/*text-align: center;*/
+			border-radius: 4px;
+			box-shadow: 0 0 8px #666;
+			-webkit-transition: all 0.5s;
+			-o-transition: all 0.5s;
+			transition: all 0.5s;
+			-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
+			-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+			-moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+			-o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+			transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+		}
+		#note.initial {
+			left: -200px;
+		}
+	</style>
+</head>
+<body>
+
+<div id="map-container">
+	<div id="map"></div>
+	<div id="note" class="initial"><strong>Here I am!</strong> Press the button to the left to see the help panel as it appears with default settings.</div>
+</div>
+
+<script>
+	$(function(){
+		myMap = L.map('map', {
+			helpControl: true
+		}).setView([40.69, -73.97], 16)
+		myLayer = L.tileLayer.provider('Esri.WorldGrayCanvas')
+		myLayer.on('load', function(){
+			$('#note').toggleClass('initial')
+		})
+		myLayer.addTo(myMap);
+	});
+</script>
+</body>
+</html>
