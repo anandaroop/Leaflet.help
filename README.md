@@ -63,5 +63,4 @@ help.addTo(map);
 
 ### Customizing the design
 
-Leaflet.help's appearance is specified almost entirely in CSS. Feel free to customize it for your purposes. The SASS source file is included in this repository, for easier generation of the CSS stylesheet.
-
+Leaflet.help's appearance is specified almost entirely in CSS. Feel free to customize it for your purposes. A [SASS](sass-lang.com) source file is included in this repository, for easier generation of the CSS stylesheet.
