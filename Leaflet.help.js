@@ -122,7 +122,7 @@ L.Control.Help = L.Control.extend({
 		;
 
 		// handle close button
-		var close = (document.getElementById('map-container').getElementsByClassName('help-panel')[0].getElementsByClassName('close')[0]);
+		var close = (this._map._container.getElementsByClassName('help-panel')[0].getElementsByClassName('close')[0]);
 		L.DomEvent.on(close, 'click', this._hide, this);
 
 		// reveal (force teensy delay on css transition)

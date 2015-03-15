@@ -1,0 +1,46 @@
+html {
+	background: #ddd;
+}
+body {
+	// layout
+	width: 1000px;
+	margin: 0 auto; 
+	padding: 2em;
+	// type
+	font: {
+		family: 'Nunito', sans-serif;
+		weight: 300;
+	} 
+	// appearance
+	background: #fff;
+	box-shadow: 0 0 10px #999;
+}
+header {
+	background: #eee;
+	margin: -2em -2em 0 -2em;
+	padding: 0.5em 2em 0.5em 2em;
+	h1 {
+		font-size: 3em;
+		font-weight: 400;
+		margin: 0;
+		color: #666;
+	}
+}
+
+h2 {
+	margin-top: 2em;
+}
+
+.help-button {
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	line-height: 1.5em;
+	margin: 0 0.25em;
+	text-align: center;
+	color: #666;
+	font-weight: bold;
+	border: solid 1px #aaa;
+	border-radius: 4px;
+	font-family: sans-serif;
+}
