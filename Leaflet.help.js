@@ -50,6 +50,7 @@ L.Control.Help = L.Control.extend({
 		} else if (!this.transitioning) {
 			this._show();
 		}
+		L.DomEvent.stop(e);
 	},
 
 	_available_zooms: function() {
