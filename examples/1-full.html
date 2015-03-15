@@ -86,7 +86,7 @@
 		
 		myLayer = L.tileLayer.provider('Esri.WorldGrayCanvas')
 		myLayer.on('load', function(){
-			$('#note').toggleClass('initial')
+			$('#note').addClass('initial')
 		})
 		myLayer.addTo(myMap);
 

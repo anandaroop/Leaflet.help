@@ -78,7 +78,7 @@
 		}).setView([40.69, -73.97], 16)
 		myLayer = L.tileLayer.provider('Esri.WorldGrayCanvas')
 		myLayer.on('load', function(){
-			$('#note').toggleClass('initial')
+			$('#note').addClass('initial')
 		})
 		myLayer.addTo(myMap);
 	});
