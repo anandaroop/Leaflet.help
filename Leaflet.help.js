@@ -46,7 +46,7 @@ L.Control.Help = L.Control.extend({
 
 	_click: function(e) {
 		if (this.active) {
-			this._hide();
+			this._hide(e);
 		} else if (!this.transitioning) {
 			this._show();
 		}
@@ -135,7 +135,7 @@ L.Control.Help = L.Control.extend({
 		this.active = true;
 	},
 
-	_hide: function() {
+	_hide: function(e) {
 		// begin the dismissal transition by adding the 'dismissed' style 
 		this._panel.classList.add('dismissed');
 		this.transitioning = true;
@@ -149,6 +149,7 @@ L.Control.Help = L.Control.extend({
 				that.transitioning = false;
 			}
 		}, 150)
+		L.DomEvent.stop(e);
 	}
 
 });
