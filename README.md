@@ -2,7 +2,7 @@
 
 A Leaflet control that helps users by displaying info on Leaflet's panning/zooming UI as well as other optional messages from the map creator. 
 
-See the demo.
+[See the demo](http://anandaroop.github.io/Leaflet.help).
 
 Leaflet.help determines on the fly what panning and zooming handlers are available in its assigned map and displays instructions to the user accordingly, e.g. whether they can use keyboard shortcuts, scrollwheel zooms etc.
 
