@@ -14,6 +14,8 @@ Leaflet.help integrates into your map easily, has sensible defaults, and has a f
 
 ### Include the assets
 
+Import Leaflet.help's javascript and css files into your html, somewhere after the Leaflet code itself.
+
 ```html
 <!-- Leaflet -->
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
