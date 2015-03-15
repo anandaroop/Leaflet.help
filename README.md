@@ -12,6 +12,18 @@ Leaflet.help can also be customized with additional messages that may appear bef
 
 Leaflet.help integrates into your map easily, has sensible defaults, and has a few options for greater customization.
 
+### Include the assets
+
+```html
+<!-- Leaflet -->
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+<!-- Leaflet.help -->
+<link rel="stylesheet" href="/path/to/Leaflet.help.css">
+<script src="/path/to/Leaflet.help.js"></script>
+```
+
 ### Basic example
 
 Leaflet.help can be added to your map with one simple config option passed to the map constructor:
@@ -48,3 +60,8 @@ var help = L.control.help({
 
 help.addTo(map);
 ```
+
+### Customizing the design
+
+Leaflet.help's appearance is specified almost entirely in CSS. Feel free to customize it for your purposes. The SASS source file is included in this repository, for easier generation of the CSS stylesheet.
+
