@@ -36,7 +36,9 @@ L.Control.Help = L.Control.extend({
 		this._button.innerHTML = this.options.text;
 		this._map = map;
 
+		// handle click, but ignore double-click
 		L.DomEvent.addListener(this._button, 'click', this._click, this);
+		L.DomEvent.addListener(this._button, 'dblclick', function(evt){ L.DomEvent.stop(evt) }, this);
 
 		return container;
 	},
